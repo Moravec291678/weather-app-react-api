@@ -1,0 +1,124 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif   ;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.blur {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.weather-app {
+  background-image: url(../src/img/bg.jpg);
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.weather-search {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.weather-search-input {
+  border-radius: 15px;
+  padding: 10px;
+  border: none;
+  box-shadow: inset 5px 0 15px -10px #000, inset -5px 0 15px -10px #000;
+  outline: transparent;
+  color: rgb(255, 253, 224);
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    #ff6e7f 0%,
+    #bfe9ff 100%,
+    #ff6e7f 0%
+  );
+}
+
+.weather-search-input::placeholder {
+  color: rgb(255, 253, 224);
+}
+
+.weather-search-btn {
+  background-image: linear-gradient(
+    to right,
+    #ff6e7f 0%,
+    #bfe9ff 51%,
+    #ff6e7f 100%
+  );
+}
+.weather-search-btn {
+  padding: 10px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(33, 29, 36);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  outline: transparent;
+  border: none;
+  font-size: 12px;
+}
+
+.weather-search-btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.weather-info-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 26px;
+}
+
+.weather-temp {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+}
+
+.weather-temp span { 
+  font-size: 30px;
+}
+
+.weather-img {
+  width: 80px;
+  margin: 0 auto 15px;
+}
+
+.weather-desc {
+  text-align: center;
+  font-style: italic;
+  margin: 0 0 30px 0;
+}
+
+.weather-info-bottom {
+  display: flex;
+  justify-content: space-around;
+}
